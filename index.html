@@ -1,17 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<title>Beloved-Pets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beloved-Petsr</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #f8d7a6;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffe8c6;
+            padding: 15px;
+        }
+        nav a {
+            margin-right: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        .pet-gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #888;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            background-color: #f8d7a6;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Loved Pets - Our Charity Factsheet
-Business Name: Loved Pets Animal Shelter
-Address: 6645 Watergrass Cir., Springfield, Arizona 11645
-Phone #: (555) 476-2984
-Contact Email: josie@welovepets.com</h1>
-<p>This is a paragraph.</p>
-<img src="images/jack_and_annie.jpg"/>
-</body>
-</html>
+<header>
+    <h1>Loved Pets Animal Shelter</h1>
+    <img src="square-large.png" alt="Loved Pets Shelter Logo" width="150">
+</header>
+
+<!-- Navigation Menu -->
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#hours">Hours</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#pets">Our Pets</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- About Section -->
+<section id="about">
+    <h2>Our Philosophy</h2>
+    <p>
+        At Loved Pets Animal Shelter, we believe all animals deserve a chance to find a loving forever home.
+        We provide initial veterinary care to rescued animals, then work to match each animal with a human
+        family to love them and keep them safe forever.
+    </p>
+
+    <p>
+        All animals are screened for diseases upon arrival, washed and groomed, and then added to our
+        website for adoptive families to see. All potential adoptive families are also screened for adoption
+        history, household lifestyle, and commitment to providing a safe and loving home.
+    </p>
+</section>
+
+<!-- Hours Table -->
+<section id="hours">
+    <h2>Hours of Operation</h2>
+    <table>
+        <tr><th>Day</th><th>Hours</th></tr>
+        <tr><td>Monday</td><td>8am - 5pm</td></tr>
+        <tr><td>Tuesday</td><td>8am - 5pm</td></tr>
+        <tr><td>Wednesday</td><td>8am - 8pm</td></tr>
+        <tr><td>Thursday</td><td>8am - 5pm</td></tr>
+        <tr><td>Friday</td><td>8am - 12pm</td></tr>
+        <tr><td>Saturday</td><td>8am - 12pm</td></tr>
+        <tr><td>Sunday</td><td>Closed</td></tr>
+    </table>
+</section>
+
+<!-- Volunteer Section -->
+<section id="volunteer">
+    <h2>Volunteer With Us</h2>
+    <p>We can always use volunteers to help keep our shelter open! Volunteers are needed to:</p>
+
+    <ul>
+        <li>Bathe and groom animals</li>
+        <li>Play with pets to help socialize them</li>
+        <li>Clean kennels and screening rooms</li>
+        <li>Help with administrative office tasks</li>
+    </ul>
+
+    <p>If you’re interested in volunteering, please follow these steps:</p>
+
+    <ol>
+        <li>Visit our shelter</li>
+        <li>Complete the volunteer form</li>
+        <li>Meet with our volunteer coordinator</li>
+        <li>Begin training!</li>
+    </ol>
+</section>
+
+<!-- Pet Gallery -->
+<section id="pets">
+    <h2>Meet Our Pets</h2>
+    <div class="pet-gallery">
+
+        <img src="cat_tabby_2.jpg" alt="Tabby Cat">
+        <img src="cocoa.jpg" alt="Cocoa the Dog">
+        <img src="delete.jpg" alt="Pet available for adoption">
+        <img src="greyson.jpg" alt="Greyson the Cat">
+        <img src="jack_and_annie.jpg" alt="Jack and Annie - bonded pair">
+        <img src="jellybean.jpg" alt="Jellybean the Rabbit">
+        <img src="max.jpg" alt="Max the Dog">
+        <img src="rosco.jpg" alt="Rosco the Dog">
+        <img src="sam.jpg" alt="Sam the Cat">
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p><strong>Business Name:</strong> Loved Pets Animal Shelter</p>
+    <p><strong>Address:</strong> 6645 Watergrass Cir., Springfield, Arizona 11645</p>
+    <p><strong>Phone:</strong> (555) 476-2984</p>
+    <p><strong>Email:</strong> <a href="mailto:josie@welovepets.com">josie@welovepets.com</a></p>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Loved Pets Animal Shelter</p>
+</footer>
+
+
